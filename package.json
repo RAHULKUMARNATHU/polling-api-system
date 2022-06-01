@@ -1,0 +1,24 @@
+{
+  "name": "polling-api-system",
+  "version": "1.0.0",
+  "description": "making an api for polling system",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAHULKUMARNATHU/polling-api-system.git"
+  },
+  "author": "rahul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAHULKUMARNATHU/polling-api-system/issues"
+  },
+  "homepage": "https://github.com/RAHULKUMARNATHU/polling-api-system#readme",
+  "dependencies": {
+    "env": "^0.0.2",
+    "express": "^4.18.1"
+  }
+}
