@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+
 // import models
 const Question = require('../../../models/questions');
 
