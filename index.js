@@ -4,6 +4,8 @@ const app = express();
 
 const PORT = process.env.PORT || 8000;
 
+const db = require('./config/mongoose');
+
 // middle for parse form data
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
