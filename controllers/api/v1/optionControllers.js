@@ -13,7 +13,7 @@ module.exports.createOption = async function (req, res) {
         question: req.params.id,
       });
       option.link_vote =
-        "http://localhost:8000/api/v1/options/" + option.id + "add_vote";
+        "http://localhost:8000/api/v1/options/" + option.id + "/add_vote";
       option.save();
       question.options.push(option);
       question.save();
@@ -49,13 +49,31 @@ module.exports.optionDelete = async function (req, res) {
     }
     // delete option from Question.options array also
     await Question.findByIdAndUpdate(option.question, {
-      $pull: { options : id },
+      $pull: { options: id },
     });
 
     // else delete the option from option
     await Option.findByIdAndDelete(id);
     return res.status(200).json({
       data: { message: "Option deleted sucessfully" },
+    });
+  } catch (err) {
+    return res.status(500).json({
+      data: { message: "Internal server error" },
+    });
+  }
+};
+
+// adding a vote to an option for perticular question
+module.exports.addVote = async function (req, res) {
+  try {
+    let id = req.params.id;
+
+    // find option if present then vote to it
+    await Option.findByIdAndUpdate(id, { $inc: { votes: 1 } });
+
+    return res.status(200).json({
+      data: { message: "Voted successfully" },
     });
   } catch (err) {
     return res.status(500).json({
