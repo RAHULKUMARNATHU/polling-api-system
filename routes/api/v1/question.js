@@ -5,4 +5,6 @@ const questionController = require('../../../controllers/api/v1/questionControll
 
 router.post('/create', questionController.createQuestion);
 router.get('/:id', questionController.viewQuestions);
+router.delete('/:id/delete', questionController.deleteQuestion);
+
 module.exports = router;
