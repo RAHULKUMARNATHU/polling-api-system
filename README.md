@@ -57,17 +57,17 @@ $ npm start
 
 ## API's
 
-* Create Question
+* Create Question :-
 ``` localhost:8000/api/v1/questions/create/ ```
 
-* Create Option
+* Create Option :-
 ``` localhost:8000/api/v1/options/:id/options/create/ ```
 
-* View Question
+* View Question :-
 ``` localhost:8000/api/v1/questions/:id/ ```
 
-* Delete Option
+* Delete Option :-
 ``` localhost:8000/api/v1/options/:id/delete ```
 
-* Delete Question
+* Delete Question :-
 ``` localhost:8000/api/v1/questions/:id/delete ```
