@@ -5,7 +5,7 @@ Description :
 3. We can view question
 4. We can create option for question
 5. We can delete option
-6. we can vote to perticular option for a perticular option
+6. we can vote to particular option for a particular Question .
 ***
 
 ## Requirements
