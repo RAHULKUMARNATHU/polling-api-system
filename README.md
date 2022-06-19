@@ -38,7 +38,7 @@ For development, you will only need Node.js and a node global package installed 
 ## Install
 
 ```
-$ git clone https://github.com/RAHULKUMARNATHU/polling-api-system/tree/master
+$ git clone https://github.com/RAHULKUMARNATHU/polling-api-system
 $ cd polling-api-system
 $ npm install
 ```
